@@ -1,22 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
-import TextInput from './TextInput';
+
 import SpeechOutput from './SpeechOutput';
 
 function App() {
   const [text, setText] = useState('');
 
-  const handleChange = (event) => {
-    setText(event.target.value);
-  };
-
-  const handleClick = () => {
-    const speech = new SpeechSynthesisUtterance();
-    speech.text = text;
-    window.speechSynthesis.speak(speech);
-  };
-
+ 
   return (
     <div className="App">
       <header className="App-header">
