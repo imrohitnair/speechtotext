@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import SpeechOutput from './SpeechOutput';
 
 function App() {
-  const [text, setText] = useState('');
 
  
   return (
